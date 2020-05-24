@@ -1,0 +1,495 @@
+@import 'utils.css';
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/* NAVBAR  */
+
+#main {
+    position: relative;
+    width: 100%;
+}
+
+#my-nav {
+    position: relative;
+    
+}
+
+#menu {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    text-align:right;
+    z-index:2;
+}
+
+.menu-btn {
+    padding: 15px 30px;
+    margin: 0px 10px 0 20px;
+    background-color: #FAAF40;
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.menu-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.menu-btn:last-child {
+    margin-right: 30px;
+}
+
+/* PRESENTATION */
+
+.image-site:before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(to right,rgba(26, 70, 153, 0.801) 15%,rgba(145, 210, 170, 0.2));
+    z-index:1;
+}
+
+.image-site {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-site .first-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text-presentation {
+    position: absolute;
+    color: #fff;
+    top: 20%;
+    left: 7%;
+    z-index:2;
+    animation: appeartext 3s ease;
+}
+
+@keyframes appeartext {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text-presentation h1 {
+    font-size: 100px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #fff;
+}
+
+.text-presentation p {
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.719);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.under-menu {
+    display: block;
+    z-index:2;
+    animation: exitmenu 3s ease;
+}
+
+@keyframes exitmenu {
+    from {
+        margin-left: -1000px;
+    }
+
+    to{
+        margin-left: 0px;
+    }
+}
+
+.under-menu a li {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FAAF40;
+    font-weight: 600;
+    color:#fff;
+    text-align:center;
+}
+
+.under-menu li:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* MOVIE HALL  */
+
+.row {
+    position:absolute;
+}
+
+#movies {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #000000;
+}
+
+.section-title {
+    padding-bottom:20px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-title span {
+    display: block;
+    border-bottom: 2px solid #fff;
+}
+
+#film-category {
+    padding:10px;
+}
+
+.films-title {
+    color:#fff;
+}
+
+#film-gallery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#film-gallery-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#slideshow {
+    position: relative;
+    height:100%;
+    width:100%;
+    z-index:0;
+    padding: 0;
+    margin:0;
+    left:0;
+    transition: all .5s ease-in;
+}
+
+#slideshow-2 {
+    position: relative;
+    height:100%;
+    z-index:0;
+    padding: 0;
+    margin:0;
+    left:0;
+    transition: all .5s ease-in;
+}
+
+.slide {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+}
+
+.image-group {
+    margin-right: 10px;
+    cursor:pointer;
+    width: 200px;
+    height:250px;
+    position:relative;
+    
+}
+
+
+.image-group:hover {
+    overflow: hidden;
+    object-fit: cover;
+    animation: moviescale 2s infinite;
+    z-index: 2;
+}
+
+@keyframes moviescale {
+    from {
+        transform:scale(1)
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.nav-gallery {
+    position: absolute;
+    height: 100%;
+    z-index:1;
+    width: 50px;
+    text-align: center;
+    padding-bottom: inherit;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.gallery-nav-prev {
+    left:100px;
+    z-index:1;
+}
+
+.gallery-nav-next {
+    right:100px;
+    z-index: 1;
+}
+
+.gallery-nav-btn {
+    font-size: 3rem;
+    color: red;
+}
+
+.nav-gallery {
+    position:absolute;
+}
+
+/* VIDEO MOVIE */
+
+#brand-video {
+    position: relative;
+    width:100%;
+    display: block;
+    overflow: hidden;
+}
+
+.short-movie {
+    width:100%;
+    height: 600px;
+    position: relative;
+    
+}
+
+.short-movie:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    background: linear-gradient(to right,rgba(26, 145, 153, 0.801) 15%,rgba(210,180,145,0.2));
+}
+
+.autoplay {
+    opacity: 0.5;
+    position: absolute;
+    min-width: 100%; 
+    min-height: 100%;
+    top: 0;
+    left:0;
+    z-index: -5;
+    overflow:hidden;
+    background-size: cover;
+}
+
+.youmovie {
+    top: 20%;
+    left:10%;
+    position: absolute;
+    color: #fff;
+}
+
+#brand-video .btn-film-send {
+    background-color: #FAAF40;
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/*REVIEWS*/
+
+#reviews {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    background-color: #000;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#our-reviews {
+    list-style: none;
+}
+
+.image-review {
+    margin-right: 10px;
+    cursor:pointer;
+    width: 300px;
+    height:300px;
+    opacity: 0.6;
+    padding-right: 20px;
+}
+
+.image-review:hover {
+    opacity: 1;
+}
+
+/* MODAL */
+
+#modal-overlay-log {
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    display: none;
+}
+
+#modal {
+    position: absolute;
+    width:40%;
+    height: 70%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.modal-title h1 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-bottom: 2px solid #FAAF40;
+    display: inline-block;
+}
+
+#login-form {
+    text-align: center;
+}
+
+.input-form{
+    width: 400px;
+    margin: 10px 0;
+}
+
+#forgetandremember{
+    text-align: center;
+}
+
+#log-modal-btn {
+    background-color: #FAAF40;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#log-modal-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border:1px solid #000;
+}
+
+.fa-facebook {
+    font-size: 30px;
+    color: blue;
+    padding-right:10px;
+    cursor: pointer;
+}
+
+.fa-google {
+    font-size: 30px;
+    color:red;
+    cursor: pointer;
+}
+
+#not-already-logged {
+    margin-top: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    font-size: 30px;
+    color: #000;
+}
+
+/* MODAL SIGNUP */
+
+#modal-overlay-signup {
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    display: none;
+}
+
+#modal-register {
+    position: absolute;
+    width:40%;
+    height: 80%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#modal-signup {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-bottom: 2px solid #FAAF40;
+    display: inline-block;
+}
+
+#signup-modal-btn{
+    background-color: #FAAF40;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#signup-modal-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border:1px solid #000;
+}
+
+#privacy {
+    margin-bottom: 20px;
+}

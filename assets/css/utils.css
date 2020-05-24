@@ -1,0 +1,19 @@
+.dt {
+    display: table;
+}
+
+.dtc {
+    display: table-cell;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.va-m {
+    vertical-align: middle;
+}
