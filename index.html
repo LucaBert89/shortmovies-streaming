@@ -5,56 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
-    <header class="mobile-menu">
-      <div class="menu-hamb">
-          
+    <header id="mobile-menu">
+      <div id="menu-hamb">
+        <i class="fas fa-bars"></i>
       </div>
-    </header>
 
-    <main id="main">
-      
       <nav id="#my-nav">
         <div class="logo">
 
         </div>
         <div id="menu">
-         <div class="menu-btn" id="signup-btn">
+         <div class="menu-btn bg" id="signup-btn">
            SIGN-UP
           </div>
-        <div class="menu-btn" id="login-btn">
+        <div class="menu-btn bg" id="login-btn">
           LOGIN
         </div>
        </div>
-
+       <div>
+        <ul class="under-menu">
+            <a href="#movies"><li>YOUR FILMS</li></a>
+          
+            <a href="#brand-video"><li>SEND YOUR FILM</li></a>
+          
+            <a href="#hero-gallery"><li>OUR REVIEWS</li></a>
+          
+            <a href="#movies"><li>CONTACT US</li></a>
+      
+        </ul>
+      </div>
        <div id="search">
 
        </div>
+    </header>
+
+    <main id="main">
+      
       </nav>
       <section id="presentation">
         <div class="image-site">
-            <img class="first-image" src="./assets/images/first image/man-holding-film-camera-2925312.jpg" alt="">
             <div class="text-presentation">
               <h1>YouMovie</h1>
-              <p>You can become a film director from home receiving experts feedbacks!</p>  
-              <ul class="under-menu">
-                  <a href="#movies"><li>YOUR FILMS</li></a>
-                
-                  <a href="#brand-video"><li>SEND YOUR FILM</li></a>
-                
-                  <a href="#hero-gallery"><li>OUR REVIEWS</li></a>
-                
-                  <a href="#movies"><li>CONTACT US</li></a>
-            
-              </ul>
+              <p>You can become a film director from home receiving experts feedbacks!</p>
+              <p id="mobile-presentation">Let's start to make a movie!</p>
             </div>
-              
-          </div>
+            </div>
         
       </section>
 
@@ -79,50 +80,114 @@
           <div id="film-gallery">
                   <div class="gallery-nav-prev nav-gallery h-100">
                     <div class="col-sm-12 my-auto">
-                      <span class="gallery-nav-btn" data-action="p">
+                      <span class="gallery-nav-btn" data-action="p" data-parent ="film-gallery">
                         <i class="fas fa-chevron-left"></i>
                       </span>
                     </div>
                   </div>
                   <div class="gallery-nav-next nav-gallery h-100">
                     <div class="col-sm-12 my-auto">
-                      <span class="gallery-nav-btn" data-action="n">
+                      <span class="gallery-nav-btn" data-action="n" data-parent ="film-gallery">
                       <i class="fas fa-chevron-right"></i>
                       </span>
                     </div>
                   </div>
-          <ul id="slideshow">
-            <li class="slide">
-              <img class="image-group col-sm-12-md-6" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-            
-              <img class="image-group col-sm-12-md-6"src="./assets/images/moviewalls/enough.jpg" alt="">
-          
-                <img class="image-group col-sm-12-md-6"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-            
-                <img class="image-group col-sm-12-md-6" src="./assets/images/moviewalls/io.jpeg" alt="">
-                           
-                <img class="image-group col-sm-12-md-6"src="./assets/images/moviewalls/matrix.jpg" alt="">
+          <div id="slideshow">
+            <div id="inner-slide">
+              <div class="slide">
+                 <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+              </div>
+              <div class="slide">
+                <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/matrix.jpg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/terminator.jpg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+             </div>
+             <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+            </div>
+          </div>
+          </div>
 
-                <img class="image-group col-sm-12-md-6" src="./assets/images/moviewalls/terminator.jpg" alt="">
-            </li>
-              
-              
-            <li class="slide">
-              <img class="image-group" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/enough.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/io.jpeg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/matrix.jpg" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/terminator.jpg" alt="">
-            </li><li class="slide">
-              <img class="image-group" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/enough.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/io.jpeg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/matrix.jpg" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/terminator.jpg" alt="">
-            </li>
-          </ul>
       </div>
           <div id="film-category">
             <div class="col text-left">
@@ -131,45 +196,99 @@
               </h4>
           </div>
           </div>
-        <div id="film-gallery-2">
+        <div id="film-gallery-2" >
           <div class="gallery-nav-prev nav-gallery h-100">
             <div class="col-sm-12 my-auto">
-              <span class="gallery-nav-btn" data-action="p2">
+              <span class="gallery-nav-btn" data-action="p2" data-parent ="film-gallery-2">
                 <i class="fas fa-chevron-left"></i>
               </span>
             </div>
           </div>
           <div class="gallery-nav-next nav-gallery h-100">
             <div class="col-sm-12 my-auto">
-              <span class="gallery-nav-btn" data-action="n2">
+              <span class="gallery-nav-btn" data-action="n2" data-parent ="film-gallery-2">
               <i class="fas fa-chevron-right"></i>
               </span>
             </div>
           </div>
-      <ul id="slideshow-2">
-        <li class="slide">
-          <img class="image-group" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/enough.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/io.jpeg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/matrix.jpg" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/terminator.jpg" alt="">
-        </li><li class="slide">
-          <img class="image-group" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/enough.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/io.jpeg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/matrix.jpg" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/terminator.jpg" alt="">
-        </li><li class="slide">
-          <img class="image-group" src="./assets/images/moviewalls/bad-boys.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/enough.jpg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/dodgy.jpe" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/io.jpeg" alt="">
-              <img class="image-group"src="./assets/images/moviewalls/matrix.jpg" alt="">
-              <img class="image-group" src="./assets/images/moviewalls/terminator.jpg" alt="">
-        </li>
-      </ul>
+          <div id="slideshow-2">
+          <div id="inner-slide-2">
+            <div class="slide">
+               <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+            </div>
+            <div class="slide">
+              <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+           </div>
+           <div class="slide">
+            <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+         </div>
+         <div class="slide">
+           <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+        </div>
+        <div class="slide">
+         <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+        </div>
+        <div class="slide">
+         <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+        </div>
+        <div class="slide">
+          <img class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')" alt="">
+       </div>
+       <div class="slide">
+         <img class="image-group" style="background-image:url('./assets/images/moviewalls/enough.jpg')" alt="">
+      </div>
+      <div class="slide">
+       <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+      </div>
+      <div class="slide">
+       <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+      </div>
+      <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/dodgy.jpe')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+       <div class="slide">
+        <img class="image-group" style="background-image:url('./assets/images/moviewalls/io.jpeg')" alt="">
+       </div>
+      </div>
       </div>
     
     </section>
@@ -180,9 +299,9 @@
             <video width="100%" autoplay loop muted class="autoplay" src="./assets/videos/Pexels Videos 1998560.mp4"></video>
           </div>
           <div class="youmovie">
-            <h2 style="font-size: 40px">Record your movie and send it<br> to us to become famous!</h2>
+            <h2>Record your movie and send it to us to become famous!</h2>
             <p>A real film director can see your film and review it.</p>
-            <a href=""><div class="btn-film-send">SEND YOUR FILM</div></a>
+            <a href=""><div class="btn-film-send bg">SEND YOUR FILM</div></a>
           </div>
         </div>
     </section>
@@ -197,11 +316,65 @@
           </div>
         <ul id="our-reviews">
           <li>
-            <img class="image-review"src="./assets/images/SLIDESHOW/Monster.jpe" alt="">
-            <img class="image-review"src="./assets/images/SLIDESHOW/Monster.jpe" alt="">
-            <img class="image-review"src="./assets/images/SLIDESHOW/Monster.jpe" alt="">
+            <div class="review">
+            <img class="image-review"src="assets/images/moviewalls/bad-boys.jpg" alt="">
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star-half"></i>
+            </div>
+            </div>
+            
+            <div class="review">
+              <img class="image-review"src="assets/images/SLIDESHOW/Monster.jpe" alt="">
+              <div class="stars">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star-half"></i>
+              </div>
+              </div>
+              <div class="review">
+                <img class="image-review"src="assets/images/moviewalls/io.jpeg" alt="">
+                <div class="stars">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star-half"></i>
+                </div>
+                </div>
           </li>
         </ul>
+    </section>
+
+    <section id="contact-us">
+        <div id="newsletter">
+          <i class="far fa-envelope"></i>
+          <h3>Get updates from us!</h3>
+          <p>Sign up and receive useful tips or a shortfilm list to watch!</p>
+        <div id="send-email">
+          <input type="text" name="newsletter" id="newsletter" placeholder="you@mail.com">
+        <div id="button">
+          <button class="sendBtn">SEND</button>
+        </div>
+        </div>
+        </div>
+        <div id="contacts">
+          <h3>Contact Us</h3>
+          <img class="image-contact" src="./assets/images/contact/contact.png" alt="">
+        </div>
+        <div id="email-details">
+          <h5>Our Office</h5>
+          <a href="mailto:youmovie@gmail.com">youmovie@gmail.com</a>
+          <h5>Business Collaboration</h5>
+          <a href="mailto:youmovie@gmail.com">youmovie@gmail.com</a>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-google"></i>
+        </div>
     </section>
 
       <div id="modal-overlay-log">
@@ -277,8 +450,12 @@
     </div>
 
 </main>
+
+<footer>
+  <p>© Copyright 2020. All Rights are Reserved.</p>
+</footer>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
