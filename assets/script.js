@@ -18,7 +18,7 @@ var bp = {
     'xl' : 8
 };
 
-
+var pages;
 var GalleryNavBtns = document.getElementsByClassName("gallery-nav-btn");
 
 var vw;
@@ -91,15 +91,20 @@ function handleResize () {
 function setupSlideshow() {
     vw = window.innerWidth;
     var breakpoint;
+    var pages;
 
     if(vw > 0 && vw <= 768) {
         breakpoint = "xs";
+        pages = [1,2,3,4,5,6,7,8,9,10,11,12];
     } else if (vw > 768 && vw <= 992) {
         breakpoint = "md";
+        pages = [1,2,3,4,5,6];
     } else if (vw > 992 && vw <= 1200) {
         breakpoint = "lg";
+        pages = [1,2,3,4]
     } else {
         breakpoint = "xl";
+        pages = [1,2,3]
     }
 
     var newview = vw / bp[breakpoint];
@@ -114,10 +119,21 @@ function setupSlideshow() {
 
 function handleBtnClick (event) {
     var BtnClicked = this;
+    var pages;
+
+    if(vw > 0 && vw <= 768) {
+        pages = [1,2,3,4,5,6,7,8,9,10,11,12];
+    } else if (vw > 768 && vw <= 992) {
+        pages = [1,2,3,4,5,6];
+    } else if (vw > 992 && vw <= 1200) {
+        pages = [1,2,3,4]
+    } else {
+        pages = [1,2,3]
+    }
+
     parent = BtnClicked.getAttribute("data-parent");
     var action = BtnClicked.getAttribute("data-action");
     var next = 0;
-    var pages = [1,2,3];
     if(parent === "film-gallery") {
         if(action === "p") {
             console.log(parent1);
