@@ -198,7 +198,7 @@
 @media all and (min-width: 780px) {
     
     .image-site {
-        background-image: url("../images/firstimage/man-holding-film-camera-2925312.jpg");
+        background-image: url("../images/firstimage/man-holding-film-camera-2925312.jpg")   ;
     }
 
     #mobile-presentation {
@@ -714,7 +714,7 @@
     color: #000;
 }
 
-@media all and (min-width: 768px) { 
+@media all and (min-width: 1024px) { 
     .close-btn {
         display: none;
     }
@@ -778,7 +778,7 @@
     margin-bottom: 20px;
 }
 
-@media all and (min-width: 768px) { 
+@media all and (min-width: 1024px) { 
     #modal-register {
         width:40%;
         height: 80%;
