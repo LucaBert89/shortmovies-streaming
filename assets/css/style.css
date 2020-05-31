@@ -105,7 +105,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("/assets/images/firstimage/320px.png");
+    background-image: url("../images/firstimage/320px.png");
     background-size: cover;
 }
 
@@ -183,21 +183,13 @@
 }
 
 
-@media all and (min-width:320px) {
-    .image-site {
-        background-image: url("/assets/images/firstimage/320px.png");
-    }
-
-    
-}
-
 
 @media all and (min-width: 680px) {
     .image-site {
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url("/assets/images/firstimage/man-holding-film-camera-2925312.jpg");
+        background-image: url("../images/firstimage/568px.png");
         background-size: cover;
         background-position: center center;
     }
@@ -205,6 +197,10 @@
 
 @media all and (min-width: 780px) {
     
+    .image-site {
+        background-image: url("../images/firstimage/man-holding-film-camera-2925312.jpg");
+    }
+
     #mobile-presentation {
         visibility: hidden;
     }
