@@ -76,8 +76,8 @@
                 </h4>
             </div>
             </div>
-          
-          <div id="film-gallery">
+          <!-- ho aggiunto due attributi data. solitamente le slide ti arrivano dal backend quindi questi li valorizzi contando gli elementi che ti tornano dal backend e current-page inizia sempre a 1 -->
+          <div id="film-gallery" class="gallery" data-max-slides="30" data-current-page="1">
                   <div class="gallery-nav-prev nav-gallery h-100">
                     <div class="col-sm-12 my-auto">
                       <span class="gallery-nav-btn" data-action="p" data-parent ="film-gallery">
@@ -93,7 +93,8 @@
                     </div>
                   </div>
           <div id="slideshow">
-            <div id="inner-slide">
+            
+            <div id="inner-slide" class="inner-slider" data-parent ="film-gallery">
               <div class="slide">
                  <div class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')"></div>
               </div>
@@ -196,23 +197,24 @@
               </h4>
           </div>
           </div>
-        <div id="film-gallery-2" >
+        <!-- ho aggiunto due attributi data. solitamente le slide ti arrivano dal backend quindi questi li valorizzi contando gli elementi che ti tornano dal backend e current-page inizia sempre a 1 -->
+        <div id="film-gallery-2" class="gallery" data-max-slides="25" data-current-page="1">
           <div class="gallery-nav-prev nav-gallery h-100">
             <div class="col-sm-12 my-auto">
-              <span class="gallery-nav-btn" data-action="p2" data-parent ="film-gallery-2">
+              <span class="gallery-nav-btn" data-action="p" data-parent="film-gallery-2">
                 <i class="fas fa-chevron-left"></i>
               </span>
             </div>
           </div>
           <div class="gallery-nav-next nav-gallery h-100">
             <div class="col-sm-12 my-auto">
-              <span class="gallery-nav-btn" data-action="n2" data-parent ="film-gallery-2">
+              <span class="gallery-nav-btn" data-action="n" data-parent="film-gallery-2">
               <i class="fas fa-chevron-right"></i>
               </span>
             </div>
           </div>
           <div id="slideshow-2">
-            <div id="inner-slide-2">
+            <div id="inner-slide-2" class="inner-slider" data-parent="film-gallery-2">
               <div class="slide">
                 <div class="image-group" style="background-image:url('./assets/images/moviewalls/bad-boys.jpg')"></div>
               </div>
