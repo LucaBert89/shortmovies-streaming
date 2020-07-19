@@ -2,8 +2,14 @@
 
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
+body {
+    margin:0;
+    padding:0;
+}
 
 /* NAVBAR  */
 
@@ -198,7 +204,7 @@
 @media all and (min-width: 780px) {
     
     .image-site {
-        background-image: url("../images/firstimage/man-holding-film-camera-2925312.jpg")   ;
+        background-image: url("../images/firstimage/man-holding-film-camera-2925312-compressed.jpg")   ;
     }
 
     #mobile-presentation {
@@ -294,19 +300,23 @@
 
 /* MOVIE HALL  */
 
+.container {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+
 .row {
     position:absolute;
 }
 
 #movies {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
     background-color: #000000;
 }
 
 .section-title {
-    margin-bottom: 60px;
-    padding-bottom:20px;
     color: #fff;
     font-weight: 800;
     letter-spacing: 2px;
@@ -315,6 +325,7 @@
 .section-title span {
     display: block;
     border-bottom: 2px solid #fff;
+    font-size: 25px;
 }
 
 #film-category {
@@ -323,6 +334,7 @@
 
 .films-title {
     color:#fff;
+    font-size: 24px;
 }
 
 #film-gallery {
@@ -415,7 +427,7 @@
 }
 
 .gallery-nav-prev {
-    left:10px;
+    left:0px;
     z-index:1;
     background-color: rgb(0,0,0, 0.6);
 }
@@ -445,6 +457,10 @@
     position:absolute;
 }
 
+@media all and (min-width: 768px) {
+.section-title span {
+    font-size: 35px;
+}}
 
 /* VIDEO MOVIE */
 
@@ -534,6 +550,7 @@
 }
 
 #our-reviews {
+    margin-top: 50px;
     list-style: none;
     margin-bottom: 100px;
 }
